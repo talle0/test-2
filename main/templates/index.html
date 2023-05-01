@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Echo App</title>
+  </head>
+  <body>
+    <h1>Echo App</h1>
+    <form method="post" action="/">
+      <label for="text">번역할 문장을 입력하세요:</label><p></p>
+      <input type="text" id="text" name="text" style="width:500px;height:200px;font-size:12px;">
+      <p></p>
+      <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+      <h2>영문 번역:</h2>
+      <p>{{ result }}</p>
+    {% endif %}
+  </body>
+</html>
